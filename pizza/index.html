@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizza Delight</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#e63946">
+  <link rel="icon" href="icons/icon-192.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="pizza.css">
+</head>
+<body>
+  <header>
+    <h1>Apna Pizza Ghar</h1>
+    <button>Order Online</button>
+  </header>
+
+  <div class="slider">
+    <img src="https://images.unsplash.com/photo-1594007654729-407eedc4be4b?auto=format&fit=crop&w=1200&q=80" class="slide active" loading="lazy">
+    <img src="https://images.unsplash.com/photo-1594007654722-cdb09b29ec9b?auto=format&fit=crop&w=1200&q=80" class="slide" loading="lazy">
+    <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1200&q=80" class="slide" loading="lazy">
+    <img src="https://images.unsplash.com/photo-1612874741443-0f20a6973b26?auto=format&fit=crop&w=1200&q=80" class="slide" loading="lazy">
+  </div>
+
+  <!-- Explore Categories Section (Unchanged) -->
+  <section class="categories">
+    <h2>Explore Categories</h2>
+    <div class="category-list">
+      <div class="category-item">
+        <div class="category-image">
+          <img src="https://via.placeholder.com/150" alt="Pizza" />
+        </div>
+        <h3>Pizza</h3>
+      </div>
+      <div class="category-item">
+        <div class="category-image">
+          <img src="https://via.placeholder.com/150" alt="Pasta" />
+        </div>
+        <h3>Pasta</h3>
+      </div>
+      <div class="category-item">
+        <div class="category-image">
+          <img src="https://via.placeholder.com/150" alt="Wings" />
+        </div>
+        <h3>Wings</h3>
+      </div>
+      <div class="category-item">
+        <div class="category-image">
+          <img src="https://via.placeholder.com/150" alt="Drinks" />
+        </div>
+        <h3>Drinks</h3>
+      </div>
+      <div class="category-item">
+        <div class="category-image">
+          <img src="https://via.placeholder.com/150" alt="Desserts" />
+        </div>
+        <h3>Desserts</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Top Offers Section with Continuous Marquee -->
+  <section class="offers">
+    <h2>Top Offers</h2>
+    <div class="offers-scroll">
+      <div class="offers-track">
+        <!-- First set of offer cards -->
+        <div class="offer-card">
+          <p>🔥 2 Large Pizzas @ 599</p>
+          <div class="offer-code" data-offer="PIZZA2X599">
+            <code>PIZZA2X599</code>
+            <button class="copy-btn" data-offer="PIZZA2X599" title="Copy Code">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M10 1.5H6a.5.5 0 0 0-.5.5V3h5V2a.5.5 0 0 0-.5-.5z"/>
+                <path d="M3 3h10a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="offer-card">
+          <p>🧀 Free Garlic Bread with Pasta</p>
+          <div class="offer-code" data-offer="GARLICBREADFREE">
+            <code>GARLICBREADFREE</code>
+            <button class="copy-btn" data-offer="GARLICBREADFREE" title="Copy Code">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M10 1.5H6a.5.5 0 0 0-.5.5V3h5V2a.5.5 0 0 0-.5-.5z"/>
+                <path d="M3 3h10a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="offer-card">
+          <p>🥤 2 Drinks @ 99</p>
+          <div class="offer-code" data-offer="DRINKS2X99">
+            <code>DRINKS2X99</code>
+            <button class="copy-btn" data-offer="DRINKS2X99" title="Copy Code">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M10 1.5H6a.5.5 0 0 0-.5.5V3h5V2a.5.5 0 0 0-.5-.5z"/>
+                <path d="M3 3h10a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="offer-card">
+          <p>🎉 Combo Meal @ 399</p>
+          <div class="offer-code" data-offer="COMBOMEAL399">
+            <code>COMBOMEAL399</code>
+            <button class="copy-btn" data-offer="COMBOMEAL399" title="Copy Code">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M10 1.5H6a.5.5 0 0 0-.5.5V3h5V2a.5.5 0 0 0-.5-.5z"/>
+                <path d="M3 3h10a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <!-- Duplicate set for seamless scrolling -->
+        <div class="offer-card">
+          <p>🔥 2 Large Pizzas @ 599</p>
+          <div class="offer-code" data-offer="PIZZA2X599">
+            <code>PIZZA2X599</code>
+            <button class="copy-btn" data-offer="PIZZA2X599" title="Copy Code">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M10 1.5H6a.5.5 0 0 0-.5.5V3h5V2a.5.5 0 0 0-.5-.5z"/>
+                <path d="M3 3h10a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="offer-card">
+          <p>🧀 Free Garlic Bread with Pasta</p>
+          <div class="offer-code" data-offer="GARLICBREADFREE">
+            <code>GARLICBREADFREE</code>
+            <button class="copy-btn" data-offer="GARLICBREADFREE" title="Copy Code">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M10 1.5H6a.5.5 0 0 0-.5.5V3h5V2a.5.5 0 0 0-.5-.5z"/>
+                <path d="M3 3h10a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="offer-card">
+          <p>🥤 2 Drinks @ 99</p>
+          <div class="offer-code" data-offer="DRINKS2X99">
+            <code>DRINKS2X99</code>
+            <button class="copy-btn" data-offer="DRINKS2X99" title="Copy Code">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M10 1.5H6a.5.5 0 0 0-.5.5V3h5V2a.5.5 0 0 0-.5-.5z"/>
+                <path d="M3 3h10a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="offer-card">
+          <p>🎉 Combo Meal @ 399</p>
+          <div class="offer-code" data-offer="COMBOMEAL399">
+            <code>COMBOMEAL399</code>
+            <button class="copy-btn" data-offer="COMBOMEAL399" title="Copy Code">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M10 1.5H6a.5.5 0 0 0-.5.5V3h5V2a.5.5 0 0 0-.5-.5z"/>
+                <path d="M3 3h10a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- New Menu Section -->
+  <section class="menu-section">
+    <h2>Our Menu</h2>
+    <div class="menu-tabs">
+      <div class="menu-tab active" data-category="veg">Veg</div>
+      <div class="menu-tab" data-category="nonveg">Non Veg</div>
+      <div class="menu-tab" data-category="dessert">Dessert</div>
+      <div class="menu-tab" data-category="drink">Drink</div>
+    </div>
+    <div class="menu-items" id="menuItems">
+      <!-- Menu items will populate here dynamically -->
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-icon"><a href="home.html">🏠<br>Home</a></div>
+    <div class="footer-icon"><a href="profile.html">👤<br>Profile</a></div>
+    <div class="footer-icon"><a href="cart.html">🛒<br>Cart</a></div>
+  </footer>
+
+  <script src="pizza.js"></script>
+
+</body>
+</html>
